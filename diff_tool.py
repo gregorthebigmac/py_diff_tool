@@ -1,7 +1,12 @@
 import os
 
-for root_dir, dirs, filenames in os.walk('.'):
-	# add path to all subdirectories
-	for filenames in dirs:
-		filenames.join(dirs)
-		print(filenames)
+root_dir = raw_input("What dir?")
+dir_path, dirs, filenames = os.walk(root_dir)
+print(dir_path)
+print("contents:")
+print("dirs:")
+print(dirs)
+print("files:")
+print(filenames)
+
+
